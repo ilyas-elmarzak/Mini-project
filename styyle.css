@@ -1,0 +1,104 @@
+body{
+    background-color: hsl(204, 43%, 93%);
+    width: 80%;
+    margin: auto;
+}
+.container{
+    width: 60%;
+    font-family: 'Karla', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+.firstside{
+    box-sizing: border-box;
+    box-shadow: 5px 10px 40px hsl(229, 6%, 66%);
+    width: 650px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.title{
+    color: hsl(179, 62%, 43%);
+    padding: 10px 0px 0px 50px;
+}
+.subtitle{
+    color: hsl(71, 73%, 54%);
+    padding: 0px 0px 0px 50px;
+}
+.para{
+    color: hsl(218, 22%, 67%);
+    padding: 0px 0px 0px 50px;
+}
+.lastsides{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 650px;
+}
+.secondside{
+    box-sizing: border-box;
+    box-shadow: 5px 10px 40px hsl(229, 6%, 66%);
+    height: 270px;
+    background-color: hsl(179, 56%, 40%);
+    padding: 20px 0px 0px 50px;
+    border-radius: 0px 0px 0px 10px;
+}
+.subscription{
+    color: white;
+}
+button{
+    padding: 5%;
+    margin-left: 3%;
+    margin-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+span{
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+.price p{
+    color: hsl(180, 25%, 66%);
+}
+.dailly{
+    color: white;
+}
+.thirdside{
+    box-sizing: border-box;
+    box-shadow: 5px 10px 40px hsl(229, 6%, 66%);
+    height: 270px;
+    background-color: #4abebd;
+    padding: 20px 0px 0px 40px;
+    color: white;
+    border-radius: 0px 0px 10px 0px;
+}   
+.description{
+    width: 80%;
+    line-height: 20px;
+}
+@media (max-width:(500px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "firstside"
+                             "secondeside"
+                             "thirdside";
+    }
+    .firstside{
+        grid-area: firstside;
+    }
+    .secondside{
+        grid-area: secondside;
+    }
+    .thirdside{
+        grid-area: ;
+    }
+}
